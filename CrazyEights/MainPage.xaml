@@ -7,7 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FF169C16">
+        <Grid Margin="501,417,501,230">
+            <Button x:Name="playButton" Content="Play" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" BorderThickness="2" FontSize="32"/>
+        </Grid>
+        <Grid Margin="501,609,501,38">
+            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32"/>
+        </Grid>
+        <Grid Margin="501,516,501,131">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="201*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="2">
+                <Button x:Name="rulesButton" Content="Rules" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32"/>
+            </Grid>
+        </Grid>
+        <Grid Margin="280,43,280,347">
+            <Image x:Name="TitleImage" Height="330" VerticalAlignment="Top" Source="Assets/crazyeightslogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+
+        </Grid>
 
     </Grid>
 </Page>
