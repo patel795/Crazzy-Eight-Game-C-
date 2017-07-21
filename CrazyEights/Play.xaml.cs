@@ -26,5 +26,10 @@ namespace CrazyEights
         {
             this.InitializeComponent();
         }
+
+        private void _backButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
     }
 }

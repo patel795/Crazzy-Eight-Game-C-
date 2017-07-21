@@ -29,7 +29,7 @@ namespace CrazyEights
 
         private void _playButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Play));
         }
 
         private void _rulesButton_Click(object sender, RoutedEventArgs e)
