@@ -12,9 +12,9 @@
             <Image x:Name="TitleImage" Source="Assets/crazyeightslogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="0,-42,-12,-40"/>
 
         </Grid>
-        <Button x:Name="_playButton" Content="Play" HorizontalAlignment="Left" Margin="542,343,0,0" VerticalAlignment="Top" Height="70" Width="215" FontSize="24" Background="#FFFAF7F7"/>
-        <Button x:Name="_rulesButton" Content="Rules" HorizontalAlignment="Left" Margin="546,449,0,0" VerticalAlignment="Top" Height="74" Width="213" FontSize="24" Background="#FFE7E8EC"/>
-        <Button x:Name="_exitButton" Content="Exit" HorizontalAlignment="Left" Margin="546,561,0,0" VerticalAlignment="Top" Height="76" Width="215" FontSize="24" Background="#FFE7E8EC"/>
+        <Button x:Name="_playButton" Content="Play" HorizontalAlignment="Left" Margin="542,343,0,0" VerticalAlignment="Top" Height="70" Width="215" FontSize="24" Background="#FFFAF7F7" Click="_playButton_Click"/>
+        <Button x:Name="_rulesButton" Content="Rules" HorizontalAlignment="Left" Margin="546,449,0,0" VerticalAlignment="Top" Height="74" Width="213" FontSize="24" Background="#FFE7E8EC" Click="_rulesButton_Click"/>
+        <Button x:Name="_exitButton" Content="Exit" HorizontalAlignment="Left" Margin="546,561,0,0" VerticalAlignment="Top" Height="76" Width="215" FontSize="24" Background="#FFE7E8EC" Click="_exitButton_Click"/>
 
     </Grid>
 </Page>

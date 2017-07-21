@@ -26,5 +26,20 @@ namespace CrazyEights
         {
             this.InitializeComponent();
         }
+
+        private void _playButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void _rulesButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Rules));
+        }
+
+        private void _exitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
