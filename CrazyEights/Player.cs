@@ -10,30 +10,30 @@ namespace CrazyEights
     {
         private string _name;
         private Hand _hand;
-    }
-    public Card Play(CardGame cardGame)
-    {
-        return null;
-    }
 
-    public Card SearchForMatch(Card prev)
-    {
-        return null;
-    }
+        public Card Play(CardGame cardGame)
+        {
+            return null;
+        }
 
-    public Card DrawForMatch(CardGame cardGame, Card prev)
-    {
-        return null;
-    }
+        public Card SearchForMatch(Card prev)
+        {
+            return null;
+        }
 
-    public bool CardMatches(Card card1, Card card2)
-    {
-        return true;
-    }
-    public int Score()
-    {
-        return 0;
-    }
+        public Card DrawForMatch(CardGame cardGame, Card prev)
+        {
+            return null;
+        }
 
+        public bool CardMatches(Card card1, Card card2)
+        {
+            return true;
+        }
+        public int Score()
+        {
+            return 0;
+        }
+    }
 }
 

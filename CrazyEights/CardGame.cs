@@ -12,26 +12,32 @@ namespace CrazyEights
         private Player two;
         private Hand drawPile;
         private Hand discardPile;
+
+
+        public CardGame()
+        {
+            Deck deck = new Deck("Deck");
+            deck.ShuffleCards();
+
+            int handSize = 8;
+            one = new Player("John");
+            deck.deal(one.getHand(), handSize);
+
+            two = new Player("Chris");
+            deck.deal(two.getHand(), handSize);
+
+            discardPile = new Hand("Discards");
+            deck.deal(discardPile, 1);
+
+            drawPile = new Hand("Draw pile");
+            deck.dealAll(drawPile);
+        }
+        public bool IsDone()
+        {
+            return true;
+        }
     }
 
-    public CardGame()
-    {
-        Deck deck = new Deck("Deck");
-        deck.ShuffleCards();
-
-        int handSize = 8;
-        one = new Player("John");
-        deck.deal(one.getHand(), handSize);
-
-        two = new Player("Chris");
-        deck.deal(two.getHand(), handSize);
-
-        discardPile = new Hand("Discards");
-        deck.deal(discardPile, 1);
-
-        drawPile = new Hand("Draw pile");
-        deck.dealAll(drawPile);
-    }
 
 
 
