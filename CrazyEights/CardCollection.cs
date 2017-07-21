@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrazyEights.Assets
+namespace CrazyEights
 {
-    class Card
+    class CardCollection
     {
+
     }
 }
