@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrazyEights
 {
-    public class Hand
+    class Hand
     {
-        public Hand(string command)
-        {
-
-        }
     }
 }
