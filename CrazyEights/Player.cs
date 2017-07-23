@@ -11,10 +11,12 @@ namespace CrazyEights
         private string _name;
         private Hand _hand;
 
+
         public Player(String name)
         {
 
         }
+
         public Card Play(CardGame cardGame)
         {
             return null;

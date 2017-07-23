@@ -14,6 +14,7 @@ namespace CrazyEights
         //HAS-A relationship
         private List<Card> _cardList;
 
+
         public Deck(string deck)
         {
             _cardList = new List<Card>();  //HAS-A composition
