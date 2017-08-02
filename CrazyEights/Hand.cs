@@ -12,6 +12,7 @@ namespace CrazyEights
         private List<Card> _hand;
 
 
+
         public Hand(List<Card> hand)
         {
             _hand = hand;
