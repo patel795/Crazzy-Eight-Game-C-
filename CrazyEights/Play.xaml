@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="CrazyEights.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CrazyEights"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF169C16" RenderTransformOrigin="0.605,0.462">
+        <Button x:Name="_backButtonPlay" Content="Back" HorizontalAlignment="Left" Margin="15,12,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="561,13,0,0" VerticalAlignment="Top" Width="122" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="53,249,0,0" VerticalAlignment="Top" Width="126" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="1033,241,0,0" VerticalAlignment="Top" Width="126" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="21,487,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="177,487,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="343,487,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="505,485,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="665,485,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="829,487,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="989,485,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="1141,483,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="391,241,0,0" VerticalAlignment="Top" Width="126" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="711,237,0,0" VerticalAlignment="Top" Width="126" Source="Assets/Square150x150Logo.png" RenderTransformOrigin="0.524,0.529"/>
+
+    </Grid>
+</Page>

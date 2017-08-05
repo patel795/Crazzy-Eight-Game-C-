@@ -104,6 +104,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Play.xaml.cs">
+      <DependentUpon>Play.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rules.xaml.cs">
@@ -117,6 +120,75 @@
     <None Include="CrazyEights_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\CardImages\c01.png" />
+    <Content Include="Assets\CardImages\c02.png" />
+    <Content Include="Assets\CardImages\c03.png" />
+    <Content Include="Assets\CardImages\c04.png" />
+    <Content Include="Assets\CardImages\c05.png" />
+    <Content Include="Assets\CardImages\c06.png" />
+    <Content Include="Assets\CardImages\c07.png" />
+    <Content Include="Assets\CardImages\c08.png" />
+    <Content Include="Assets\CardImages\c09.png" />
+    <Content Include="Assets\CardImages\c10.png" />
+    <Content Include="Assets\CardImages\c11.png" />
+    <Content Include="Assets\CardImages\c12.png" />
+    <Content Include="Assets\CardImages\c13.png" />
+    <Content Include="Assets\CardImages\Card-Back-01.png" />
+    <Content Include="Assets\CardImages\cardBack_blue1.png" />
+    <Content Include="Assets\CardImages\cardBack_blue2.png" />
+    <Content Include="Assets\CardImages\cardBack_blue3.png" />
+    <Content Include="Assets\CardImages\cardBack_blue4.png" />
+    <Content Include="Assets\CardImages\cardBack_blue5.png" />
+    <Content Include="Assets\CardImages\cardBack_green1.png" />
+    <Content Include="Assets\CardImages\cardBack_green2.png" />
+    <Content Include="Assets\CardImages\cardBack_green3.png" />
+    <Content Include="Assets\CardImages\cardBack_green4.png" />
+    <Content Include="Assets\CardImages\cardBack_green5.png" />
+    <Content Include="Assets\CardImages\cardBack_red1.png" />
+    <Content Include="Assets\CardImages\cardBack_red2.png" />
+    <Content Include="Assets\CardImages\cardBack_red3.png" />
+    <Content Include="Assets\CardImages\cardBack_red4.png" />
+    <Content Include="Assets\CardImages\cardBack_red5.png" />
+    <Content Include="Assets\CardImages\d01.png" />
+    <Content Include="Assets\CardImages\d02.png" />
+    <Content Include="Assets\CardImages\d03.png" />
+    <Content Include="Assets\CardImages\d04.png" />
+    <Content Include="Assets\CardImages\d05.png" />
+    <Content Include="Assets\CardImages\d06.png" />
+    <Content Include="Assets\CardImages\d07.png" />
+    <Content Include="Assets\CardImages\d08.png" />
+    <Content Include="Assets\CardImages\d09.png" />
+    <Content Include="Assets\CardImages\d10.png" />
+    <Content Include="Assets\CardImages\d11.png" />
+    <Content Include="Assets\CardImages\d12.png" />
+    <Content Include="Assets\CardImages\d13.png" />
+    <Content Include="Assets\CardImages\h01.png" />
+    <Content Include="Assets\CardImages\h02.png" />
+    <Content Include="Assets\CardImages\h03.png" />
+    <Content Include="Assets\CardImages\h04.png" />
+    <Content Include="Assets\CardImages\h05.png" />
+    <Content Include="Assets\CardImages\h06.png" />
+    <Content Include="Assets\CardImages\h07.png" />
+    <Content Include="Assets\CardImages\h08.png" />
+    <Content Include="Assets\CardImages\h09.png" />
+    <Content Include="Assets\CardImages\h10.png" />
+    <Content Include="Assets\CardImages\h11.png" />
+    <Content Include="Assets\CardImages\h12.png" />
+    <Content Include="Assets\CardImages\h13.png" />
+    <Content Include="Assets\CardImages\playing-card-back.jpg" />
+    <Content Include="Assets\CardImages\s01.png" />
+    <Content Include="Assets\CardImages\s02.png" />
+    <Content Include="Assets\CardImages\s03.png" />
+    <Content Include="Assets\CardImages\s04.png" />
+    <Content Include="Assets\CardImages\s05.png" />
+    <Content Include="Assets\CardImages\s06.png" />
+    <Content Include="Assets\CardImages\s07.png" />
+    <Content Include="Assets\CardImages\s08.png" />
+    <Content Include="Assets\CardImages\s09.png" />
+    <Content Include="Assets\CardImages\s10.png" />
+    <Content Include="Assets\CardImages\s11.png" />
+    <Content Include="Assets\CardImages\s12.png" />
+    <Content Include="Assets\CardImages\s13.png" />
     <Content Include="Assets\crazyeightslogo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -135,6 +207,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Play.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Rules.xaml">
       <SubType>Designer</SubType>
