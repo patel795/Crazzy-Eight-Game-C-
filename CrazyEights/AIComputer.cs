@@ -15,9 +15,9 @@ namespace CrazyEights
         {
 
         }
-        public Card Play(CardGame cardGame)
+        public void Play(CardGame cardGame)
         {
-            return 
+             
         }
         public List<List<Card>> FindsPotentialHands(Card prev)
         {
