@@ -15,6 +15,7 @@ namespace CrazyEights
         //HAS-A relationship
         private List<Card> _cardList;
 
+
         public Deck()
         {
             _cardList = new List<Card>();  //HAS-A composition
@@ -94,6 +95,14 @@ namespace CrazyEights
             _cardList.RemoveAt(houseRandNo);
 
             return true;
+        }
+        public void deal(object cardPlacement,int numOfCards)
+        {
+
+        }
+        public void dealAll(object cardPlacement)
+        {
+
         }
     }
 }

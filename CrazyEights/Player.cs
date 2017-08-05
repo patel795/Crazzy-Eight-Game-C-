@@ -9,7 +9,15 @@ namespace CrazyEights
     public class Player
     {
         private string _name;
-        private Hand _hand;
+       
+
+
+        public Player(String name,List<Card> hand)
+            
+        {
+            _name = name;
+            Hand playerhand = new Hand(hand);
+        }
 
         public Card Play(CardGame cardGame)
         {

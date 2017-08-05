@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF169C16">
-        <TextBlock x:Name="_rules" Margin="485,45,0,0" TextWrapping="Wrap" Text="Rules" VerticalAlignment="Top" Height="78" Width="204" FontSize="36" HorizontalAlignment="Left" Padding="55,15,45,0"/>
+        <TextBlock x:Name="_rules" Margin="485,45,0,0" TextWrapping="Wrap" Text="Rules" VerticalAlignment="Top" Height="78" Width="222" FontSize="36" HorizontalAlignment="Left" Padding="55,15,45,0"/>
         <Button x:Name="_backButton" Content="Back" HorizontalAlignment="Left" Margin="129,44,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
 
     </Grid>
