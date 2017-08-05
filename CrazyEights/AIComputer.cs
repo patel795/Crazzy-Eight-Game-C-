@@ -21,7 +21,7 @@ namespace CrazyEights
         }
         public List<List<Card>> FindsPotentialHands(Card prev)
         {
-            List<List<Card>> potentCards = new List<List<Card>>();
+            List<List<Card>> potentHands = new List<List<Card>>();
             List<Card> leftOverCards = new List<Card>();
             int numHearts = 0;
             int numSpades = 0;
@@ -29,9 +29,9 @@ namespace CrazyEights
             int numDiamonds = 0;
 
             //Decides Potential Hands
-            foreach(Card card in _hand)
+            foreach (Card card in _hand)
             {
-                if(card.SuitName == "Diamonds")
+                if (card.SuitName == "Diamonds")
                 {
                     numDiamonds += 1;
                 }
@@ -47,10 +47,10 @@ namespace CrazyEights
                 {
                     numSpades += 1;
                 }
-                else if(card.Value == prev.Value)
+                else if (card.Value == prev.Value)
                 {
                     bool leave = true;
-                    foreach(List<Card> hand in potentCards)
+                    foreach (List<Card> hand in potentHands)
                     {
                         if (hand[0].Value == card.Value)
                             hand.Add(card);
@@ -61,15 +61,15 @@ namespace CrazyEights
                     {
                         List<Card> possibleHand = new List<Card>();
                         possibleHand.Add(card);
-                        potentCards.Add(possibleHand);
+                        potentHands.Add(possibleHand);
                         possibleHand.Remove(card);
                     }
                 }
-                else if(card.Suit == prev.Suit)
+                else if (card.Suit == prev.Suit)
                 {
                     List<Card> possibleHand = new List<Card>();
                     possibleHand.Add(card);
-                    potentCards.Add(possibleHand);
+                    potentHands.Add(possibleHand);
                     possibleHand.Remove(card);
                 }
                 else
@@ -77,40 +77,34 @@ namespace CrazyEights
                     leftOverCards.Add(card);
                 }
             }
-            return potentCards;
+            foreach (List<Card> possHand in potentHands)
+            {
+                foreach (Card possCard in possHand)
+                {
+                    foreach (Card card in leftOverCards)
+                    {
+                        if(possCard.Value == card.Value)
+                        {
+                            possHand.Add(card);
+                            leftOverCards.Remove(card);
+                        }
+                    }
+                }
+            }
+            return potentHands;
+        }
+        public List<Card> DecideHandToPlay(Card prev, List<List<Card>> potentHands)
+        {
+            Random random = new Random();
+            int hand = random.Next(potentHands.Count);
+            return potentHands[hand];
+        }
+        public List<Card> OrderOfPlay(List<Card> hand)
+        {
 
+        }
 
-            //Decides Potential Hands
-            //for card in hand
-            //if card.suit == "1"
-            //numDiamonds +=1
-            //if card.suit == "2"
-            //numClubs +=1
-            //if card.suit == "3"
-            //numHearts += 1
-            //if card.suit == "4"
-            //numSpades += 1
-            //if card.value == prev.value
-            //possibleHand = [card]
-            //potentCards.append(possibleHand)
-            //possibleHand = []
-            //elif card.Suit == prev.suit
-            //possibleHand = [card]
-            //potentCards.append(card)
-            //possibleHand = []
-            //else
-            //leftOverCard.append(card)
-
-            //for possHand in potentCards
-            //for possCard in possHand
-            //for card2 in leftOverCard
-            //if possCard.value == card2.value
-            //possHand.append(card2)
-            //leftOverCard.remove(card2)
-
-            //Chooses hand
-            //Random rnd = new Random();
-            //int hand = rnd.Next(potentCards.Count);
+            
 
             //Picks what card to go on top of chosen hand
             //suitRank = {}
@@ -134,8 +128,5 @@ namespace CrazyEights
             //orderHand.append(card)
             //prev = card
             //playHand.remove(card)
-
-
-        }
     }
 }
