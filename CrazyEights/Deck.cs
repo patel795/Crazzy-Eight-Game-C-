@@ -16,7 +16,7 @@ namespace CrazyEights
         private List<Card> _cardList;
 
 
-        public Deck(string deck)
+        public Deck()
         {
             _cardList = new List<Card>();  //HAS-A composition
 

@@ -9,12 +9,14 @@ namespace CrazyEights
     public class Player
     {
         private string _name;
-        private Hand _hand;
-        private object v;
+       
 
-        public Player(String name)
+
+        public Player(String name,List<Card> hand)
+            
         {
-
+            _name = name;
+            Hand playerhand = new Hand(hand);
         }
 
         public Card Play(CardGame cardGame)
@@ -39,10 +41,6 @@ namespace CrazyEights
         public int Score()
         {
             return 0;
-        }
-        public object GetHand()
-        {
-            return v;
         }
     }
 }
