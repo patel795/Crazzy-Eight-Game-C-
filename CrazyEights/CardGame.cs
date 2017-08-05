@@ -15,22 +15,24 @@ namespace CrazyEights
 
 
         public CardGame()
-        {
-            Deck deck = new Deck("Deck");
-            deck.ShuffleCards();
+        {   
+            
+            //Deck deck = new Deck("Deck");
+            //deck.ShuffleCards();
 
-            int handSize = 8;
-            one = new Player("John");
-            deck.deal(one.getHand(), handSize);
+            //int handSize = 8;
+            //one = new Player("John");
+            //deck.deal(one.GetHand(), handSize);
 
-            two = new Player("Chris");
-            deck.deal(two.getHand(), handSize);
+           // two = new Player("Chris");
+           // deck.deal(two.GetHand(), handSize);
 
-            discardPile = new Hand("Discards");
-            deck.deal(discardPile, 1);
+           // discardPile = new Hand("Discards");
+           // deck.deal(discardPile, 1);
 
-            drawPile = new Hand("Draw pile");
-            deck.dealAll(drawPile);
+           // drawPile = new Hand("DrawPile");
+            //deck.dealAll(drawPile)
+            
         }
         public bool IsDone()
         {

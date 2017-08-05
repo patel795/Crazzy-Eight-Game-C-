@@ -8,5 +8,9 @@ namespace CrazyEights
 {
     class Hand
     {
+        public Hand(string command)
+        {
+
+        }
     }
 }

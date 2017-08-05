@@ -10,7 +10,7 @@ namespace CrazyEights
     {
         private string _name;
         private Hand _hand;
-
+        private object v;
 
         public Player(String name)
         {
@@ -39,6 +39,10 @@ namespace CrazyEights
         public int Score()
         {
             return 0;
+        }
+        public object GetHand()
+        {
+            return v;
         }
     }
 }

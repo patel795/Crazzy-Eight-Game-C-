@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,6 +96,13 @@ namespace CrazyEights
 
             return true;
         }
+        public void deal(object cardPlacement,int numOfCards)
+        {
 
+        }
+        public void dealAll(object cardPlacement)
+        {
+
+        }
     }
 }
