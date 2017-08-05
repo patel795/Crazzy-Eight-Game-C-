@@ -19,9 +19,9 @@ namespace CrazyEights
         {
             return 
         }
-        public Card SearchForMatch(Card prev)
+        public List<List<Card>> FindsPotentialHands(Card prev)
         {
-            List<Card> potentCards = new List<Card>();
+            List<List<Card>> potentCards = new List<List<Card>>();
             List<Card> leftOverCards = new List<Card>();
             int numHearts = 0;
             int numSpades = 0;
@@ -31,36 +31,54 @@ namespace CrazyEights
             //Decides Potential Hands
             foreach(Card card in _hand)
             {
-                if(card.Suit == 1)
+                if(card.SuitName == "Diamonds")
                 {
-
+                    numDiamonds += 1;
+                }
+                if (card.SuitName == "Hearts")
+                {
+                    numHearts += 1;
+                }
+                if (card.SuitName == "Clubs")
+                {
+                    numClubs += 1;
+                }
+                if (card.SuitName == "Spades")
+                {
+                    numSpades += 1;
+                }
+                else if(card.Value == prev.Value)
+                {
+                    bool leave = true;
+                    foreach(List<Card> hand in potentCards)
+                    {
+                        if (hand[0].Value == card.Value)
+                            hand.Add(card);
+                            leave = false;
+                            break;
+                    }
+                    if (leave == true)
+                    {
+                        List<Card> possibleHand = new List<Card>();
+                        possibleHand.Add(card);
+                        potentCards.Add(possibleHand);
+                        possibleHand.Remove(card);
+                    }
+                }
+                else if(card.Suit == prev.Suit)
+                {
+                    List<Card> possibleHand = new List<Card>();
+                    possibleHand.Add(card);
+                    potentCards.Add(possibleHand);
+                    possibleHand.Remove(card);
+                }
+                else
+                {
+                    leftOverCards.Add(card);
                 }
             }
-            //if card.suit == "1"
-            //numDiamonds +=1
-            //if card.suit == "2"
-            //numClubs +=1
-            //if card.suit == "3"
-            //numHearts += 1
-            //if card.suit == "4"
-            //numSpades += 1
-            //if card.value == prev.value
-            //possibleHand = [card]
-            //potentCards.append(possibleHand)
-            //possibleHand = []
-            //elif card.Suit == prev.suit
-            //possibleHand = [card]
-            //potentCards.append(card)
-            //possibleHand = []
-            //else
-            //leftOverCard.append(card)
+            return potentCards;
 
-            //potentCards = []
-            //leftOverCard = []
-            //numHearts = 0
-            //numSpades = 0
-            //numClubs = 0
-            //numDiamonds = 0
 
             //Decides Potential Hands
             //for card in hand
