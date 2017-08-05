@@ -40,7 +40,7 @@ namespace CrazyEights
 
         private void _exitButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Exit();
         }
     }
 }

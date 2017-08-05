@@ -15,11 +15,11 @@ namespace CrazyEights
         {
 
         }
-        public Card Play(CardGame cardGame)
+        public void Play(CardGame cardGame)
         {
-            return 
+            
         }
-        public Card SearchForMatch(Card prev)
+        public void SearchForMatch(Card prev)
         {
             List<Card> potentCards = new List<Card>();
             List<Card> leftOverCards = new List<Card>();
@@ -31,10 +31,7 @@ namespace CrazyEights
             //Decides Potential Hands
             foreach(Card card in _hand)
             {
-                if(card.Suit == 1)
-                {
-
-                }
+                
             }
             //if card.suit == "1"
             //numDiamonds +=1
