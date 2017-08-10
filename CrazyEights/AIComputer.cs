@@ -99,10 +99,7 @@ namespace CrazyEights
             int hand = random.Next(potentHands.Count);
             return potentHands[hand];
         }
-        public List<Card> OrderOfPlay(List<Card> hand)
-        {
-
-        }
+       
 
             
 
