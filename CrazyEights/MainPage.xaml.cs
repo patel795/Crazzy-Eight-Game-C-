@@ -28,34 +28,19 @@ namespace CrazyEights
             this.InitializeComponent();
         }
 
-        private void _rulesButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Rules));
-        }
-
-        private void _exitButton_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
-        }
-
-        private void _playButton_Click(object sender, RoutedEventArgs e)
+        private void _btnPlay_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Play));
         }
 
-        private void playButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Play));
-        }
-
-        private void exitButton_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
-        }
-
-        private void rulesButton_Click(object sender, RoutedEventArgs e)
+        private void _btnRules_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Rules));
+        }
+
+        private void _btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
         }
     }
 }

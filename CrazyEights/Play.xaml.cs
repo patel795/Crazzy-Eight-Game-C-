@@ -31,5 +31,10 @@ namespace CrazyEights
         {
             this.Frame.GoBack();
         }
+
+        private void _btnDeal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

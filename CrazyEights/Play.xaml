@@ -10,72 +10,73 @@
 
     <Grid Background="#FF169C16" RenderTransformOrigin="0.605,0.462">
         <Button x:Name="_backButtonPlay" Content="Back" HorizontalAlignment="Left" Margin="15,12,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
-        <Image Height="170" Margin="579,13,579,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg"/>
-        <Image Height="170" Margin="144,158,1010,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg" Width="126"/>
-        <Image Height="170" Margin="1010,158,144,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg" Width="126"/>
-        <Image HorizontalAlignment="Left" Height="170" Margin="373,455,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="_imgAI1" Height="170" Margin="579,13,579,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image x:Name="_imgAI2" Height="170" Margin="144,158,1010,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg" Width="126"/>
+        <Image x:Name="_imgAI3" Height="170" Margin="1010,158,144,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg" Width="126"/>
+        <Image x:Name="_imgUser2" HorizontalAlignment="Left" Height="170" Margin="373,455,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-4.305"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="478,448,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser3" HorizontalAlignment="Left" Height="170" Margin="478,448,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-2.224"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="990.857,477.571,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser8" HorizontalAlignment="Left" Height="170" Margin="990.857,477.571,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="9.873"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="1097.572,496.571,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser9" HorizontalAlignment="Left" Height="170" Margin="1097.572,496.571,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="11.773"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="581,445,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
-        <Image HorizontalAlignment="Left" Height="170" Margin="683.714,444.714,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser4" HorizontalAlignment="Left" Height="170" Margin="581,445,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image x:Name="_imgUser5" HorizontalAlignment="Left" Height="170" Margin="683.714,444.714,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="1.453"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="783.429,448.714,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser6" HorizontalAlignment="Left" Height="170" Margin="783.429,448.714,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="5.853"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="892.285,460.286,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser7" HorizontalAlignment="Left" Height="170" Margin="892.285,460.286,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="6.612"/>
             </Image.RenderTransform>
         </Image>
-        <Image Height="170" Margin="457,237,697,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg"/>
-        <Image HorizontalAlignment="Left" Height="170" Margin="697,237,0,0" VerticalAlignment="Top" Width="126" Source="Assets/Square150x150Logo.png" RenderTransformOrigin="0.524,0.529"/>
-        <Image HorizontalAlignment="Left" Height="170" Margin="267,465,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgDeck" Height="170" Margin="457,237,697,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg"/>
+        <Image x:Name="_imgPlay" HorizontalAlignment="Left" Height="170" Margin="697,237,0,0" VerticalAlignment="Top" Width="126" Source="Assets/Square150x150Logo.png" RenderTransformOrigin="0.524,0.529"/>
+        <Image x:Name="_imgUser1" HorizontalAlignment="Left" Height="170" Margin="267,465,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-7.334"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="166,478,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser11" HorizontalAlignment="Left" Height="170" Margin="166,478,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-9.648"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="70,494,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser12" HorizontalAlignment="Left" Height="170" Margin="70,494,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-12.555"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="-34,516,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser13" HorizontalAlignment="Left" Height="170" Margin="-34,516,0,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-12.555"/>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="170" Margin="1199.57,518.571,-39.57,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:Name="_imgUser10" HorizontalAlignment="Left" Height="170" Margin="1199.57,518.571,-39.57,0" VerticalAlignment="Top" Width="120" Source="Assets/CardImages/playing-card-back.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="12.871"/>
             </Image.RenderTransform>
         </Image>
+        <Button x:Name="_btnDeal" Content="Deal" HorizontalAlignment="Left" Margin="860,23,0,0" VerticalAlignment="Top" Height="77" Width="119" Click="_btnDeal_Click" Background="#FFFBFBFB"/>
 
     </Grid>
 </Page>
