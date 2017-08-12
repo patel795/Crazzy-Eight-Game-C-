@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="77*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.ColumnSpan="2">
-                <Button x:Name="rulesButton" Content="Rules" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32"/>
+                <Button x:Name="rulesButton" Content="Rules" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32" Click="rulesButton_Click"/>
             </Grid>
         </Grid>
         <Grid Margin="280,43,280,347">

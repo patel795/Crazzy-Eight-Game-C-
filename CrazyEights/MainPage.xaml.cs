@@ -42,5 +42,10 @@ namespace CrazyEights
         {
             this.Frame.Navigate(typeof(Play));
         }
+
+        private void rulesButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
