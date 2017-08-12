@@ -46,28 +46,8 @@ namespace CrazyEights
             BitmapImage cardBack = new BitmapImage(new Uri("ms-appx:///Assets/CardAssets/playing-card-back.jpg"));
         }
 
-        private void Rules()
-        {
-            if(_discard = CardValue.Jack)
-            {
-                return 
-            }
-
-            if(_discard = CardValue.Queen)
-            {
-                if(_discard = CardSuit.Spades)
-                {
-                    return 
-                }
-            }
-
-            if(_discard = CardValue.Two)
-            {
-
-            }
-
-            if(_discard = CardValue.Eight)
-        }
+        
+           
 
     }
 }
