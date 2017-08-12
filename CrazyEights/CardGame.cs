@@ -45,10 +45,12 @@ namespace CrazyEights
             //While(win = true)
               //prev = discardPile[-1];
               //List<Card> userPlay = user.Play(prev)
+              //effect = Rules(userPlay)
               //discardPile.Add(userPlay)
               //win = user.CheckWinOrLoss()
 
-              //prev = discardPile[-1];
+              //Do effect
+              ///prev = discardPile[-1];
               ///List<Card> comp1Play =comp1.Play(prev)
               ///discardPile.Add(comp1Play)
               ///win = comp1.CheckWinOrLoss()

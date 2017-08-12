@@ -9,10 +9,10 @@
 
     <Grid Background="#FF169C16">
         <Grid Margin="501,417,501,230">
-            <Button x:Name="playButton" Content="Play" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" BorderThickness="2" FontSize="32" Margin="0,0,6,5"/>
+            <Button x:Name="playButton" Content="Play" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" BorderThickness="2" FontSize="32" Margin="0,0,6,5" Click="playButton_Click"/>
         </Grid>
         <Grid Margin="501,609,501,38">
-            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32"/>
+            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32" Click="exitButton_Click"/>
         </Grid>
         <Grid Margin="501,516,501,131">
             <Grid.ColumnDefinitions>
