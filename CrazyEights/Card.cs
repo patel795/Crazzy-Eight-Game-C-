@@ -19,6 +19,24 @@ namespace CrazyEights
         Spades
     }
 
+    public enum CardValue
+    {
+        Ace = 0,
+        One,
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+    }
+
     /// <summary>
     /// Represents a playing card with a value and a suit
     /// </summary>

@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    
     <Grid Background="#FF169C16" RenderTransformOrigin="0.605,0.462">
         <Button x:Name="_backButtonPlay" Content="Back" HorizontalAlignment="Left" Margin="15,12,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
         <Image HorizontalAlignment="Left" Height="170" Margin="561,13,0,0" VerticalAlignment="Top" Width="122" Source="Assets/CardImages/playing-card-back.jpg"/>
