@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrazyEights
 {
-    class Hand
+    public class Hand
     {
         private Deck _deck;
         private List<Card> _hand;
