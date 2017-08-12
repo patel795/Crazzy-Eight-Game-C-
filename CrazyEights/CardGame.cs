@@ -13,7 +13,7 @@ namespace CrazyEights
         private Hand drawPile;
         private Hand discardPile;
 
-
+        
         public CardGame()
         {   
             

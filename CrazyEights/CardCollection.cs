@@ -9,14 +9,16 @@ namespace CrazyEights
 {
     public class CardCollection
     {
+        private Card _discard;
         private string _label;
 
         private List<Card> _cardList;
 
-        public CardCollection(string label)
+        public CardCollection(string label,Card discard)
         {
             this._label = label;
             this._cardList = new List<Card>();
+            this._discard = discard;
         }
 
         private void AddCard(Card card)
@@ -42,7 +44,30 @@ namespace CrazyEights
         private void Deal()
         {
             BitmapImage cardBack = new BitmapImage(new Uri("ms-appx:///Assets/CardAssets/playing-card-back.jpg"));
-
         }
+
+        private void Rules()
+        {
+            if(_discard = CardValue.Jack)
+            {
+                return 
+            }
+
+            if(_discard = CardValue.Queen)
+            {
+                if(_discard = CardSuit.Spades)
+                {
+                    return 
+                }
+            }
+
+            if(_discard = CardValue.Two)
+            {
+
+            }
+
+            if(_discard = CardValue.Eight)
+        }
+
     }
 }
