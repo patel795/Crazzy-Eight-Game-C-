@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace CrazyEights
 {
-    public class CardCollection
+    public class CardCollection 
     {
         private Card _discard;
         private string _label;
@@ -21,33 +21,51 @@ namespace CrazyEights
             this._discard = discard;
         }
 
-        private void AddCard(Card card)
-        {
-            this._cardList.Add(card);
-        }
-
-        private void RemoveCard(Card card)
-        {
-            this._cardList.Remove(card);
-        }
-
-        private int Size()
-        {
-            return _cardList.Count;
-        }
-
         private bool Empty()
         {
             return _cardList.Count == 0;
         }
-
-        private void Deal()
+        private void DecideCardEffects(List<Card> playHand)
         {
-            BitmapImage cardBack = new BitmapImage(new Uri("ms-appx:///Assets/CardAssets/playing-card-back.jpg"));
-        }
+            if (playHand[0].Value == 11)
+            {
+                if (playHand.Count > 1)
+                {
+                    foreach (Card card in playHand)
+                    {
+                        //Skip += 1
+                        //return skip
+                    }
+                }
+            }
 
-        
-           
+            else if(playHand[0].Value == 12)
+            {
+                foreach(Card card in playHand)
+                {
+                    if(card.SuitName == "Spades")
+                    {
+                        //retuurn pick up 5 cards
+                    }
+                }
+                //return do nothing
+            }
+
+            else if(playHand[0].Value == 2)
+            {
+                //addcard = 0
+                foreach(Card card in playHand)
+                {
+                    //addcard += 2
+                }
+                //return addcard
+            }
+
+            else if(playHand[0].Value == 8)
+            {
+                //ask
+            }
+        }
 
     }
 }
