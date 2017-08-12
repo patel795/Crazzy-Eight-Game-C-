@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace CrazyEights
 {
-    class AIComputer
+    public class AIComputer
     {
         private string _name;
         private List<Card> _hand;
-
+       
         public AIComputer()
         {
 
         }
-        public void Play(CardGame cardGame)
+        public List<Card> Play(CardGame cardGame, Card prev)
         {
+            List<List<Card>> potentHands = FindsPotentialHands(prev);
+            List<Card> handToPlay = DecideHandToPlay(potentHands);
+            List<Card> playHand = OrderOfPlay(prev,handToPlay);
+            return playHand;
+            //playHand.add(cards in center)
              
         }
         public List<List<Card>> FindsPotentialHands(Card prev)
@@ -93,40 +98,75 @@ namespace CrazyEights
             }
             return potentHands;
         }
-        public List<Card> DecideHandToPlay(Card prev, List<List<Card>> potentHands)
+        public List<Card> DecideHandToPlay(List<List<Card>> potentHands)
         {
             Random random = new Random();
             int hand = random.Next(potentHands.Count);
             return potentHands[hand];
         }
-        public List<Card> OrderOfPlay(List<Card> hand)
+        public List<Card> OrderOfPlay(Card prev, List<Card> hand)
         {
+            if (hand[0].Value == prev.Value)
+            {
+                Random rand = new Random();
+                List<Card> playHand = hand.OrderBy(c => rand.Next()).Select(c => c).ToList();
+                return playHand;
+            }
 
+            else
+            {
+                List<Card> handOrder = new List<Card>(hand.Count);
+                int spot = 0;
+                foreach (Card card in hand)
+                {
+                    if(card.Suit == prev.Suit)
+                    {
+                        handOrder[0] = card;
+                    }
+                    else
+                    {
+                        handOrder[spot + 1] = card;
+                    }
+                
+                }
+                return handOrder;
+            }
+        }
+        public bool CheckWinOrLoss()
+        {
+            if (_hand.Count == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
-            
 
-            //Picks what card to go on top of chosen hand
-            //suitRank = {}
-            //suitRank["Diamonds"] = numDiamonds
-            //suitRank["Clubs"] = numClubs
-            //suitRank["Hearts"] = numHearts
-            //suitRank["Spades"] = numSpades
-            //suitRank.Sort()
-            //suitNum = 0
 
-            //for suit in suitRank:
-            //suitNum += 1
-            //suit = suitNum
+        //Picks what card to go on top of chosen hand
+        //suitRank = {}
+        //suitRank["Diamonds"] = numDiamonds
+        //suitRank["Clubs"] = numClubs
+        //suitRank["Hearts"] = numHearts
+        //suitRank["Spades"] = numSpades
+        //suitRank.Sort()
+        //suitNum = 0
 
-            //orderHand = []
-            //for card in playHand
-            //if prev.value() == card.value()
-            //if card
-            //else:
-            //if card.suit() == prev.suit()
-            //orderHand.append(card)
-            //prev = card
-            //playHand.remove(card)
+        //for suit in suitRank:
+        //suitNum += 1
+        //suit = suitNum
+
+        //orderHand = []
+        //for card in playHand
+        //if prev.value() == card.value()
+        //if card
+        //else:
+        //if card.suit() == prev.suit()
+        //orderHand.append(card)
+        //prev = card
+        //playHand.remove(card)
     }
 }
