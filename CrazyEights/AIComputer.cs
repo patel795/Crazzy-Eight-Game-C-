@@ -40,27 +40,29 @@ namespace CrazyEights
                 {
                     numDiamonds += 1;
                 }
-                if (card.SuitName == "Hearts")
+                else if (card.SuitName == "Hearts")
                 {
                     numHearts += 1;
                 }
-                if (card.SuitName == "Clubs")
+                else if (card.SuitName == "Clubs")
                 {
                     numClubs += 1;
                 }
-                if (card.SuitName == "Spades")
+                else if (card.SuitName == "Spades")
                 {
                     numSpades += 1;
                 }
-                else if (card.Value == prev.Value)
+                if (card.Value == prev.Value)
                 {
                     bool leave = true;
                     foreach (List<Card> hand in potentHands)
                     {
                         if (hand[0].Value == card.Value)
+                        {
                             hand.Add(card);
                             leave = false;
                             break;
+                        }
                     }
                     if (leave == true)
                     {

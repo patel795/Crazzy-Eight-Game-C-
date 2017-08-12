@@ -9,34 +9,71 @@ namespace CrazyEights
     public class Player
     {
         private string _name;
-       
+        private Hand _playerhand;
 
 
         public Player(String name,List<Card> hand)
             
         {
             _name = name;
-            Hand playerhand = new Hand(hand);
+            _playerhand = new Hand(hand);
         }
 
-        public Card Play(CardGame cardGame)
+        public void Play(Card play)
         {
-            return null;
+            List<Card> hand = _playerhand.ListHand();
+            this.SearchForMatch(play);
+            foreach (Card card in hand)
+            {
+                if (card.Playable == true)
+                {
+                    break;
+                }
+            }
+            ///draw a card
+            Card drawn = new Card(0,0);
+            this.DrawForMatch(drawn,play);
+            
+            
         }
 
-        public Card SearchForMatch(Card prev)
+        public void SearchForMatch(Card play)
         {
-            return null;
+            List<Card> hand = _playerhand.ListHand();
+            foreach(Card card in hand)
+            {
+                
+              card.IsPlayable(this.CardMatches(card, play));
+                
+            }
+            
         }
 
-        public Card DrawForMatch(CardGame cardGame, Card prev)
+        public void DrawForMatch(Card drawn,Card play)
         {
-            return null;
+            drawn.IsPlayable(this.CardMatches(drawn, play));
+            
         }
 
         public bool CardMatches(Card card1, Card card2)
         {
-            return true;
+            if(card1.Value == card2.Value || card1.Value == 8)
+            {
+                return true;
+            }
+            else if (card1.Suit == card2.Suit)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+        public void RemoveCard(Card card)
+        {
+            _playerhand.RemoveCard(card);
         }
         public int Score()
         {
