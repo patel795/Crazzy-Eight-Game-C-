@@ -78,7 +78,17 @@ namespace CrazyEights
         internal void ShuffleCards()
         {
             //TODO: implement this using a Fisher-Yates shuffle algorithm
-            throw new NotImplementedException();
+            Random rng = new Random();
+            int n = _cardList.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                Card value = _cardList[k];
+                _cardList[k] = _cardList[n];
+                _cardList[n] = value;
+            }
+            
         }
 
         internal bool GetPairOfCards(out Card playerCard, out Card houseCard)
@@ -96,8 +106,17 @@ namespace CrazyEights
 
             return true;
         }
-        public void Deal(object cardPlacement,int numOfCards)
+        public List<Card> Deal(int numOfCards)
         {
+            var random = new Random();
+            List<Card> hand = new List<Card>();
+            for(int x = 1; x <= numOfCards; x++)
+            {
+                int index = random.Next(_cardList.Count);
+                hand.Add(_cardList[index]);
+                _cardList.RemoveAt(index);
+            }
+            return hand;
             
         }
         public void dealAll(object cardPlacement)

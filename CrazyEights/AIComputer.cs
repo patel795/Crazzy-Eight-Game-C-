@@ -15,7 +15,7 @@ namespace CrazyEights
         {
 
         }
-        public List<Card> Play(CardGame cardGame, Card prev)
+        public List<Card> Play(Card prev)
         {
             List<List<Card>> potentHands = FindsPotentialHands(prev);
             List<Card> handToPlay = DecideHandToPlay(potentHands);
@@ -28,31 +28,19 @@ namespace CrazyEights
         {
             List<List<Card>> potentHands = new List<List<Card>>();
             List<Card> leftOverCards = new List<Card>();
-            int numHearts = 0;
-            int numSpades = 0;
-            int numClubs = 0;
-            int numDiamonds = 0;
+            
 
             //Decides Potential Hands
             foreach (Card card in _hand)
             {
-                if (card.SuitName == "Diamonds")
+                if (card.Value == 8)
                 {
-                    numDiamonds += 1;
+                    List<Card> possibleHand = new List<Card>();
+                    possibleHand.Add(card);
+                    potentHands.Add(possibleHand);
+                    possibleHand.Remove(card);
                 }
-                else if (card.SuitName == "Hearts")
-                {
-                    numHearts += 1;
-                }
-                else if (card.SuitName == "Clubs")
-                {
-                    numClubs += 1;
-                }
-                else if (card.SuitName == "Spades")
-                {
-                    numSpades += 1;
-                }
-                if (card.Value == prev.Value)
+                else if (card.Value == prev.Value)
                 {
                     bool leave = true;
                     foreach (List<Card> hand in potentHands)

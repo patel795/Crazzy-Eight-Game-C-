@@ -24,7 +24,8 @@ namespace CrazyEights
             //deck.ShuffleCards();
 
             //user = new Player("Player");
-            //deck.deal(user.GetHand(), handSize);
+            //List<Card> userHand = deck.deal(user.GetHand(), handSize);
+            
 
             //comp1 = new AiComputer("Computer 1");
             //deck.deal(comp1.GetHand(), handSize);
