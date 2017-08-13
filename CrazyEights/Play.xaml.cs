@@ -25,11 +25,21 @@ namespace CrazyEights
         public Play()
         {
             this.InitializeComponent();
+            Dictionary<Image,Card> playersHand = 
         }
 
         private void _backButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
+        }
+
+        private void _dealButton_Click(object sender, RoutedEventArgs e)
+        {
+            int handsize = 8;
+            Deck deck = new Deck();
+            deck.ShuffleCards();
+
+            Player user = new Player("jack", handsize);
         }
     }
 }

@@ -25,47 +25,76 @@ namespace CrazyEights
         {
             return _cardList.Count == 0;
         }
-        private void DecideCardEffects(List<Card> playHand)
+        private void DecideCardEffects(List<Card> playHand, int userOrComp)
         {
             if (playHand[0].Value == 11)
             {
-                if (playHand.Count > 1)
-                {
-                    foreach (Card card in playHand)
-                    {
-                        //Skip += 1
-                        //return skip
-                    }
-                }
+                SkipTurn(playHand);
             }
 
             else if(playHand[0].Value == 12)
             {
-                foreach(Card card in playHand)
-                {
-                    if(card.SuitName == "Spades")
-                    {
-                        //retuurn pick up 5 cards
-                    }
-                }
-                //return do nothing
+                PickUpFive(playHand);
             }
 
             else if(playHand[0].Value == 2)
             {
-                //addcard = 0
-                foreach(Card card in playHand)
-                {
-                    //addcard += 2
-                }
-                //return addcard
+                PickUpTwo(playHand);
             }
-
-            else if(playHand[0].Value == 8)
+            else if(userOrComp == 1)
             {
-                //ask
+                if(playHand[0].Value == 8)
+                {
+                //UserChangeSuits()
+                }
             }
         }
-
+        public int SkipTurn(List<Card> playHand)
+        {
+            int skip = playHand.Count+1;
+            return skip;
+        }
+        public int PickUpFive(List<Card> playHand)
+        {
+            int pickUp = 0;
+            foreach (Card card in playHand)
+            {
+                if (card.SuitName == "Spades")
+                {
+                    return pickUp += 5;
+                }
+            }
+            return pickUp;
+        }
+        public int PickUpTwo(List<Card> playHand)
+        {
+            int pickUp = playHand.Count*2;
+            return pickUp;
+        }
+        public int CompChangeSuits()
+        {
+            Random rnd = new Random();
+            int randSuit = rnd.Next(1, 5);
+            return randSuit;
+        }
+        public int UserChangeSuits(string suit)
+        {
+            if (suit == "Diamonds")
+            {
+                return 1;
+            }
+            else if (suit == "Clubs")
+            {
+                return 2;
+            }
+            else if (suit == "Hearts")
+            {
+                return 3;
+            }
+            else
+            {
+                return 4;
+            }
+        }
     }
 }

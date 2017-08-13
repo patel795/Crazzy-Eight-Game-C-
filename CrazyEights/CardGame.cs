@@ -64,6 +64,17 @@ namespace CrazyEights
               ///List<Card> comp3Play =comp3.Play(prev)
               ///discardPile.Add(comp3Play)
               ///win = comp3.CheckWinOrLoss()
+            
+            ///turns = {1:user, 2:comp1, 3:comp2, 4:comp3}
+            ///win = False
+            ///foreach(KeyValuePair<int,dynamic> turn in turns)
+               ///prev = discardPile[-1]
+               ///List<Card> playTurn = turn.dynamic.Play(prev)
+               ///effect = Rules(playTurn)
+               ///discardPile.Add(playTurn)
+               ///win = user.CheckWinOrLoss()
+               ///if win == True
+                  ///break
         }
         public bool IsDone()
         {
