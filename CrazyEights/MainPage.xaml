@@ -8,25 +8,24 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF169C16">
-        <Grid Margin="501,417,501,230">
-            <Button x:Name="playButton" Content="Play" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" BorderThickness="2" FontSize="32" Margin="0,0,6,5" Click="playButton_Click"/>
-        </Grid>
-        <Grid Margin="501,609,501,38">
-            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32" Click="exitButton_Click"/>
-        </Grid>
+        <Grid Margin="501,417,501,230"/>
+        <Grid Margin="501,609,501,38"/>
         <Grid Margin="501,516,501,131">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="201*"/>
                 <ColumnDefinition Width="77*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.ColumnSpan="2">
-                <Button x:Name="rulesButton" Content="Rules" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" FontSize="32" Click="rulesButton_Click"/>
-            </Grid>
+            <Grid Grid.ColumnSpan="2"/>
         </Grid>
         <Grid Margin="280,43,280,347">
-            <Image x:Name="TitleImage" Height="330" VerticalAlignment="Top" Source="Assets/crazyeightslogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+            <Image x:Name="TitleImage" Source="Assets/crazyeightslogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="5,-73,-5,-46"/>
 
         </Grid>
+        <Canvas HorizontalAlignment="Left" Height="280" Margin="385,369,0,0" VerticalAlignment="Top" Width="495" >
+            <Button x:Name="_btnRules" Content="Rules" Canvas.Left="200" Canvas.Top="108" Height="41" Width="129" Click="_btnRules_Click" Background="#FFF1F2F7"/>
+            <Button x:Name="_btnExit" Content="Exit" Canvas.Left="200" Canvas.Top="166" Width="128" Height="42" Click="_btnExit_Click" Background="#FFF1F2F7"/>
+            <Button x:Name="_btnPlay" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="40" Click="_btnPlay_Click" Background="#FFF1F2F7" Canvas.Left="200" Canvas.Top="50"/>
+        </Canvas>
 
     </Grid>
 </Page>

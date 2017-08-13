@@ -19,6 +19,11 @@ namespace CrazyEights
 
         }
 
+        public List<Card> ListHand()
+        {
+            return _hand;
+
+        }
 
         public Card GetCard(byte num)
         {
@@ -26,9 +31,9 @@ namespace CrazyEights
 
         }
 
-        public void RemoveCard(byte num)
+        public void RemoveCard(Card card)
         {
-            _hand.RemoveAt(num);
+            _hand.Remove(card);
 
         }
         

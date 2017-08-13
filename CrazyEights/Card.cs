@@ -52,11 +52,13 @@ namespace CrazyEights
         /// </summary>
         private CardSuit _suit;
 
+        private bool _playable;
+
         public Card(byte value, CardSuit suit)
         {
             //"this" is equivalent to "self" in Python
             this._value = value;
-
+            
             //this. is added by the compiler, it is not necessary to add it explicitly
             _suit = suit; //HAS-A composition relationship, suit value is NOT shared and is exclusively owned
         }
@@ -66,7 +68,11 @@ namespace CrazyEights
             get { return _value; }
             set { _value = value; }
         }
-
+        public bool Playable
+        {
+            get { return _playable; }
+            set { _playable = value; }
+        }
         public CardSuit Suit
         {
             get { return _suit; }
@@ -117,7 +123,11 @@ namespace CrazyEights
                 }
             }
         }
-
+        public bool IsPlayable(bool play)
+        {
+            _playable = play;
+            return play;
+        }
 
         public override string ToString()
         {

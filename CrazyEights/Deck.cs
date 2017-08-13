@@ -96,9 +96,9 @@ namespace CrazyEights
 
             return true;
         }
-        public void deal(object cardPlacement,int numOfCards)
+        public void Deal(object cardPlacement,int numOfCards)
         {
-
+            
         }
         public void dealAll(object cardPlacement)
         {
