@@ -8,17 +8,18 @@ namespace CrazyEights
 {
     public class Player
     {
+        //Field Variables
         private string _name;
         private Hand _playerhand;
 
-
+        //Initializing
         public Player(String name,List<Card> hand)
             
         {
             _name = name;
             _playerhand = new Hand(hand);
         }
-
+        //IN this method,user decides which card to play
         public void Play(Card play)
         {
             List<Card> hand = _playerhand.ListHand();
@@ -39,6 +40,7 @@ namespace CrazyEights
 
         public void SearchForMatch(Card play)
         {
+            //Search for card which matches the deck
             List<Card> hand = _playerhand.ListHand();
             foreach(Card card in hand)
             {
@@ -51,10 +53,11 @@ namespace CrazyEights
 
         public void DrawForMatch(Card drawn,Card play)
         {
+            //Check for match
             drawn.IsPlayable(this.CardMatches(drawn, play));
             
         }
-
+        //Condition if card matches
         public bool CardMatches(Card card1, Card card2)
         {
             if(card1.Value == card2.Value || card1.Value == 8)
@@ -71,10 +74,12 @@ namespace CrazyEights
             }
             
         }
+        //Remove a card
         public void RemoveCard(Card card)
         {
             _playerhand.RemoveCard(card);
         }
+        //Score
         public int Score()
         {
             return 0;
