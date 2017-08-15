@@ -61,18 +61,6 @@ namespace CrazyEights
             {
                 Debug.WriteLine(card);
             }
-
-            //TODO: use a for loop go through all the cards in _cardList
-            //and print the content
-            //Use Debug.WriteLine() instead of Console.WriteLine()
-            //for (byte iCard = 0; iCard < _cardList.Count; iCard++)
-            //{
-            //    //extract the current card object from the list
-            //    Card card = _cardList[iCard];
-
-            //    //print the card content
-            //    Debug.WriteLine(card);
-            //}
         }
 
         internal void ShuffleCards()
@@ -108,7 +96,7 @@ namespace CrazyEights
         }
         public List<Card> Deal(int numOfCards)
         {
-            var random = new Random();
+            Random random = new Random();
             List<Card> hand = new List<Card>();
             for(int x = 1; x <= numOfCards; x++)
             {
@@ -119,9 +107,6 @@ namespace CrazyEights
             return hand;
             
         }
-        public void dealAll(object cardPlacement)
-        {
-
-        }
+        
     }
 }

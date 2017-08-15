@@ -9,7 +9,23 @@
 
     <Grid Background="#FF169C16">
         <TextBlock x:Name="_rules" Margin="485,45,0,0" TextWrapping="Wrap" Text="Rules" VerticalAlignment="Top" Height="78" Width="222" FontSize="36" HorizontalAlignment="Left" Padding="55,15,45,0"/>
-        <Button x:Name="_backButton" Content="Back" HorizontalAlignment="Left" Margin="129,44,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
+        <Button x:Name="_backButton" Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="438" Width="1114" FontSize="24">
+            <Run Text="1) F"/>
+            <Run Text="irst the deck is shuffled and then 8 cards are given to the user and the 3 computer"/>
+            <Run Text="s. Then the 1 card from the deck is placed beside the deck in the center."/>
+            <LineBreak/>
+            <Run Text="2) Then, the user does his turn. In this turn he must put down a card that has the same suit or the same nu"/>
+            <Run Text="m"/>
+            <Run Text="ber as the"/>
+            <Run Text=" card in the center. If it is the same number, the player can put down multiple cards of the same number. "/>
+            <LineBreak/>
+            <Run Text="3) If the card is a &quot;Jack&quot; then the next user skips his turn, if it is a 2 then the next user picks up 2, if the card is a &quot;Queen of Spades&quot;, then the next user picks up 5 and if the player puts down an 8, then the player can change the suit."/>
+            <LineBreak/>
+            <Run Text="4.) After the player puts his card down, then it is the next players turn. The game ends when a player loses his cards and that player wins."/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
 
     </Grid>
 </Page>

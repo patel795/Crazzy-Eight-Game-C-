@@ -11,24 +11,28 @@ namespace CrazyEights
         private string _name;
         private List<Card> _hand;
        
-        public AIComputer()
+        public AIComputer(List<Card> hand)
         {
-
+            _hand = hand;
         }
         public List<Card> Play(Card prev)
         {
+            //This method returns the hand that will be played
             List<List<Card>> potentHands = FindsPotentialHands(prev);
             List<Card> handToPlay = DecideHandToPlay(potentHands);
             List<Card> playHand = OrderOfPlay(prev,handToPlay);
             return playHand;
-            //playHand.add(cards in center)
              
         }
+       
         public List<List<Card>> FindsPotentialHands(Card prev)
         {
+            //This method finds the potential hands that can be played
+
+            //Creates a list that holds the potential hands, each potential hand is a list
             List<List<Card>> potentHands = new List<List<Card>>();
+            //This list is for cards that cannot be played
             List<Card> leftOverCards = new List<Card>();
-            
 
             //Decides Potential Hands
             foreach (Card card in _hand)
@@ -72,6 +76,7 @@ namespace CrazyEights
                     leftOverCards.Add(card);
                 }
             }
+            //Checks if each possible hand made from the previous loop has a card with the same value
             foreach (List<Card> possHand in potentHands)
             {
                 foreach (Card possCard in possHand)
@@ -90,12 +95,14 @@ namespace CrazyEights
         }
         public List<Card> DecideHandToPlay(List<List<Card>> potentHands)
         {
+            //Decides randomly what hand to play
             Random random = new Random();
             int hand = random.Next(potentHands.Count);
             return potentHands[hand];
         }
         public List<Card> OrderOfPlay(Card prev, List<Card> hand)
         {
+            //Decides randomly the order of the cards to play in the hand
             if (hand[0].Value == prev.Value)
             {
                 Random rand = new Random();
@@ -124,6 +131,7 @@ namespace CrazyEights
         }
         public bool CheckWinOrLoss()
         {
+            //Checks if the AI computer has won or loss
             if (_hand.Count == 0)
             {
                 return false;
@@ -133,30 +141,5 @@ namespace CrazyEights
                 return true;
             }
         }
-
-
-
-        //Picks what card to go on top of chosen hand
-        //suitRank = {}
-        //suitRank["Diamonds"] = numDiamonds
-        //suitRank["Clubs"] = numClubs
-        //suitRank["Hearts"] = numHearts
-        //suitRank["Spades"] = numSpades
-        //suitRank.Sort()
-        //suitNum = 0
-
-        //for suit in suitRank:
-        //suitNum += 1
-        //suit = suitNum
-
-        //orderHand = []
-        //for card in playHand
-        //if prev.value() == card.value()
-        //if card
-        //else:
-        //if card.suit() == prev.suit()
-        //orderHand.append(card)
-        //prev = card
-        //playHand.remove(card)
     }
 }

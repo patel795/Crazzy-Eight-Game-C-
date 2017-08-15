@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
 
-    <Grid Background="#FF169C16" RenderTransformOrigin="0.605,0.462">
+    <Grid Background="#FF169C16" RenderTransformOrigin="0.605,0.462" >
         <Button x:Name="_backButtonPlay" Content="Back" HorizontalAlignment="Left" Margin="15,12,0,0" VerticalAlignment="Top" Height="84" Width="147" FontSize="36" Background="#FFFBFBFB" Click="_backButton_Click"/>
         <Image Height="170" Margin="579,13,579,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg"/>
         <Image Height="170" Margin="144,158,1010,0" VerticalAlignment="Top" Source="Assets/CardImages/playing-card-back.jpg" Width="126"/>
@@ -24,151 +24,80 @@
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="_userCard5" HorizontalAlignment="Left" Margin="642,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard5" HorizontalAlignment="Left" Margin="642,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy1" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
         </Button>
-        <Button x:Name="_userCard6" HorizontalAlignment="Left" Margin="762,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard6" HorizontalAlignment="Left" Margin="762,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy3" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
         </Button>
-        <Button x:Name="_userCard12" HorizontalAlignment="Left" Margin="522,601,0,-51" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard12" HorizontalAlignment="Left" Margin="522,601,0,-51" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy5" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
-        <Button x:Name="_userCard7" HorizontalAlignment="Left" Margin="882,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard7" HorizontalAlignment="Left" Margin="882,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy7" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
-        <Button x:Name="_userCard10" HorizontalAlignment="Left" Margin="1122,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard10" HorizontalAlignment="Left" Margin="1122,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy9" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
         </Button>
-        <Button x:Name="_userCard3" HorizontalAlignment="Left" Margin="402,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard3" HorizontalAlignment="Left" Margin="402,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" >
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy11" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
         </Button>
         <Button x:Name="_userCard2" HorizontalAlignment="Left" Margin="282,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy13" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
-        <Button x:Name="_userCard1" HorizontalAlignment="Left" Margin="162,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
+        <Button x:Name="_userCard1" HorizontalAlignment="Left" Margin="162,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818" Click="_userCard1_Click">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy15" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
         <Button x:Name="_userCard9" HorizontalAlignment="Left" Margin="42,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy17" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
         <Button x:Name="_userCard8" HorizontalAlignment="Left" Margin="1002,431,0,0" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy19" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-            </Button>
+
         </Button>
         <Button x:Name="_userCard11" HorizontalAlignment="Left" Margin="407,601,0,-51" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy22" HorizontalAlignment="Left" Margin="470,600,-490,-612" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-                <Button x:Name="_usersCard1_Copy23" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                    <Button.Background>
-                        <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                    </Button.Background>
-                </Button>
-            </Button>
+
         </Button>
         <Button x:Name="_userCard13" HorizontalAlignment="Left" Margin="642,601,0,-51" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy24" HorizontalAlignment="Left" Margin="470,600,-490,-612" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-                <Button x:Name="_usersCard1_Copy25" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                    <Button.Background>
-                        <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                    </Button.Background>
-                </Button>
-            </Button>
         </Button>
         <Button x:Name="_userCard14" HorizontalAlignment="Left" Margin="762,601,0,-51" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
             </Button.Background>
-            <Button x:Name="_usersCard1_Copy27" HorizontalAlignment="Left" Margin="470,600,-490,-612" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                </Button.Background>
-                <Button x:Name="_usersCard1_Copy28" Content="" HorizontalAlignment="Left" Margin="578,425,-598,-437" VerticalAlignment="Top" Width="120" Height="170" RenderTransformOrigin="0.617,0.818">
-                    <Button.Background>
-                        <ImageBrush Stretch="Fill" ImageSource="Assets/CardImages/playing-card-back.jpg"/>
-                    </Button.Background>
-                </Button>
-            </Button>
         </Button>
+        <Button x:Name="_cantGoButton" Content="Can't Go" HorizontalAlignment="Left" Margin="78,626,0,0" VerticalAlignment="Top" Height="56" Width="131" Click="_cantGoButton_Click"/>
+        <Button x:Name="_playButton" Content="Play" HorizontalAlignment="Left" Margin="1074,626,0,0" VerticalAlignment="Top" Height="56" Width="131" Click="_cantGoButton_Click"/>
 
     </Grid>
 </Page>
